@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="24dp">
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:layout_marginTop="24dp" />
+        <!-- TextView -->
+        <TextView
+            android:id="@+id/textViewExample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đây là TextView"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp" />
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/editTextExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập nội dung"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- ImageView -->
+        <ImageView
+            android:id="@+id/imageViewExample"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="Image View"
+            android:layout_marginTop="16dp" />
+
+        <!-- WebView -->
+        <WebView
+            android:id="@+id/webViewExample"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/buttonExample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bấm vào đây"
+            android:layout_marginTop="16dp" />
+
+        <!-- RadioGroup -->
+        <RadioGroup
+            android:id="@+id/radioGroupExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/radioOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxExample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý điều khoản"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
