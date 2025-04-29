@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A1F0FF"
+    android:paddingTop="26dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9AD6F6"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_rounded"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Lịch khám"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ngay_kham_mong_muon"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_edittext_blue">
+
+                <EditText
+                    android:id="@+id/edtNgayKham"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="12/7/2024"
+                    android:textColor="#2196F3"
+                    android:textColorHint="#6DACFA"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:cursorVisible="false" />
+                <ImageView
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_calendar"
+                    android:contentDescription="Calendar Icon"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edittext_blue"
+                android:padding="8dp">
+                <Button
+                    android:id="@+id/custom_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:backgroundTint="#70ADFA"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/li_do"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_edittext_blue">
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit" /> <!-- Thay thế với hình cây bút -->
+
+                <!-- EditText nằm sau icon -->
+                <EditText
+                    android:id="@+id/reason_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_toEndOf="@id/edit_icon"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="16dp"
+                    android:hint="Nhập lý do khám"
+                    android:text="mệt mỏi"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_edittext_blue" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp">
+
+            <!-- TextView cho "Loại hình thức khám" -->
+            <TextView
+                android:id="@+id/type_of_examination_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại hình thức khám"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textColor="#000000" />
+
+            <!-- TextView cho "Chọn loại" -->
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chon_loai"
+                android:paddingLeft="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <!-- RadioGroup chứa các RadioButton -->
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- RadioButton cho "Khám dịch vụ thường" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_service_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Khám dịch vụ thường"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100.000đ"
+                        android:textSize="16sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <!-- RadioButton cho "Khám dịch vụ ngoài giờ" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_service_after_hours"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Khám dịch vụ ngoài giờ"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200.000đ"
+                        android:textSize="16sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

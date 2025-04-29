@@ -35,9 +35,8 @@ public class AdapterDemoActivity extends AppCompatActivity {
             Toast.makeText(this, "Bạn chọn: " + food, Toast.LENGTH_SHORT).show();
         });
 
-        // Sự kiện click "Quay lại"
         btnBack.setOnClickListener(v -> {
-            finish();  // Quay lại activity trước đó
+            finish();
         });
     }
 }

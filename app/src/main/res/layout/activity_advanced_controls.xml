@@ -22,7 +22,6 @@
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
 
-        <!-- ListView Demo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +35,6 @@
             android:divider="@android:color/darker_gray"
             android:dividerHeight="0.5dp" />
 
-        <!-- Spinner Demo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +51,6 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
 
-        <!-- AutoCompleteTextView Demo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +69,6 @@
             android:hint="Enter text"
             android:inputType="text" />
 
-        <!-- GridView Demo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,7 +85,6 @@
             android:padding="8dp"
             android:numColumns="auto_fit" />
 
-        <!-- TimePicker Demo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,8 +97,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <!-- SlidingDrawer Demo -->
-        <!-- SlidingDrawer Demo -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,14 +113,12 @@
             android:handle="@+id/drawer_handle"
             android:content="@+id/drawer_content">
 
-            <!-- 1) the handle -->
             <android.widget.ImageView
                 android:id="@+id/drawer_handle"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:src="@android:drawable/ic_menu_more" />
 
-            <!-- 2) the content -->
             <LinearLayout
                 android:id="@+id/drawer_content"
                 android:layout_width="match_parent"
@@ -141,8 +132,6 @@
                     android:layout_height="wrap_content"
                     android:text="SlidingDrawer Content"
                     android:textColor="#FFF" />
-
-                <!-- add more controls here if you like -->
 
             </LinearLayout>
         </android.widget.SlidingDrawer>

@@ -43,8 +43,23 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <string name="xml_layout">1. XML Layout</string>
-    <string name="common_controls">2. Common Controls</string>
-    <string name="advanced_controls">3. Advanced Controls</string>
+    <string name="xml_layout">Bài 1</string>
+    <string name="common_controls">Bài 2</string>
+    <string name="advanced_controls">bài 3</string>
     <string name="adapter_adapterView">4. Adapter và AdapterView</string>
+    <string name="register_account">Đăng ký tài khoản</string>
+    <string name="fullname">Nhập họ và tên</string>
+    <string name="email">Nhập email</string>
+    <string name="password">Nhập mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="agree">Tôi đồng ý với điều khoản sử dụng</string>
+    <string name="register">Đăng ký</string>
+    <string name="back">Quay lại</string>
+    <string name="login">Đăng nhập</string>
+    <string name="username">Nhập tên đăng nhập</string>
+    <string name="save_login">Ghi nhớ đăng nhập</string>
+    <string name="ngay_kham_mong_muon">Ngày khám mong muốn<font color="#FF0000">*</font></string>
+    <string name="li_do">Lí do khám<font color="#FF0000">*</font></string>
+    <string name="chon_loai">Chọn loại hình thức khám<font color="#FF0000">*</font></string>
+
 </resources>

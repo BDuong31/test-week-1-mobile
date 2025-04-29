@@ -33,7 +33,18 @@
         <activity android:name=".AdapterDemoActivity">
 
         </activity>
+        <activity android:name=".Test">
 
+        </activity>
+        <activity android:name=".login">
+
+        </activity>
+        <activity android:name=".AppointmentActivity">
+
+        </activity>
+        <activity android:name=".register">
+
+        </activity>
     </application>
 
 </manifest>

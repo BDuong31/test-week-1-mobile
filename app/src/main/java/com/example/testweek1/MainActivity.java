@@ -15,23 +15,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Gán các button với ID từ layout XML
         btnXmlLayout = findViewById(R.id.btnXmlLayout);
         btnCommonControls = findViewById(R.id.btnCommonControls);
         btnAdvancedControls = findViewById(R.id.btnAdvancedControls);
-        btnAdapterDemo = findViewById(R.id.btnAdapterDemo);
 
-        // Sự kiện click mở các activity tương ứng
         btnXmlLayout.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, XmlLayoutActivity.class)));
+                startActivity(new Intent(MainActivity.this, register.class)));
 
         btnCommonControls.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, CommonControlsActivity.class)));
+                startActivity(new Intent(MainActivity.this, login.class)));
 
         btnAdvancedControls.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, AdvancedControlsActivity.class)));
-
-        btnAdapterDemo.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, AdapterDemoActivity.class)));
+                startActivity(new Intent(MainActivity.this, AppointmentActivity.class)));
     }
 }

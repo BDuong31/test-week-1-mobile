@@ -32,39 +32,32 @@ public class AdvancedControlsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advanced_controls);
 
-        // ListView setup
         listView = findViewById(R.id.listView);
         String[] listData = {"Item 1", "Item 2", "Item 3", "Item 4"};
         ArrayAdapter<String> listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
         listView.setAdapter(listAdapter);
 
-        // Spinner setup
         spinner = findViewById(R.id.spinner);
         String[] spinnerData = {"Option 1", "Option 2", "Option 3"};
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinnerData);
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(spinnerAdapter);
 
-        // AutoCompleteTextView setup
         autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
         String[] autoCompleteData = {"Apple", "Banana", "Cherry", "Date"};
         ArrayAdapter<String> autoCompleteAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, autoCompleteData);
         autoCompleteTextView.setAdapter(autoCompleteAdapter);
 
-        // GridView setup
         gridView = findViewById(R.id.gridView);
         String[] gridData = {"Apple", "Banana", "Cherry", "Date"};
         ArrayAdapter<String> gridAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, gridData);
         gridView.setAdapter(gridAdapter);
 
-        // TimePicker setup
         timePicker = findViewById(R.id.timePicker);
         timePicker.setIs24HourView(true);
 
-        // SlidingDrawer setup
         slidingDrawer = findViewById(R.id.slidingDrawer);
 
-        // Back Button setup
         backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

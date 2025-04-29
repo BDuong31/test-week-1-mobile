@@ -30,7 +30,6 @@ public class CommonControlsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_controls);
 
-        // Khởi tạo các điều khiển
         textViewExample = findViewById(R.id.textViewExample);
         editTextExample = findViewById(R.id.editTextExample);
         imageViewExample = findViewById(R.id.imageViewExample);
@@ -40,19 +39,15 @@ public class CommonControlsActivity extends AppCompatActivity {
         checkBoxExample = findViewById(R.id.checkBoxExample);
         backButton = findViewById(R.id.backButton);
 
-        // Thiết lập WebView: nạp trang ví dụ
         WebView webView = findViewById(R.id.webViewExample);
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://youthscience.club/");
 
-        // Thiết lập sự kiện click cho Button ví dụ
         buttonExample.setOnClickListener(v -> {
-            // Thực hiện hành động tùy thích, ví dụ: đổi text TextView
             textViewExample.setText("Button clicked!");
         });
 
-        // Thiết lập sự kiện change cho RadioGroup
         radioGroupExample.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.radioOption1) {
                     textViewExample.setText("Option 1 selected");
@@ -61,7 +56,6 @@ public class CommonControlsActivity extends AppCompatActivity {
             }
         });
 
-        // Thiết lập sự kiện click cho CheckBox
         checkBoxExample.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 textViewExample.setText("Checkbox is checked");
@@ -70,9 +64,8 @@ public class CommonControlsActivity extends AppCompatActivity {
             }
         });
 
-        // Sự kiện Back button
         backButton.setOnClickListener(v -> {
-            finish(); // Hoặc: finish();
+            finish();
         });
     }
 }
